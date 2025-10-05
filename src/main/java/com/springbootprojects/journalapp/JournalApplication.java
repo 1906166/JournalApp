@@ -9,13 +9,15 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@EnableTransactionManagement
+@EnableTransactionManagement // we need to add this Annotation if we are using Transaction Annotation in our project.
 public class JournalApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(JournalApplication.class, args);
     }
 
+    // PlatformTransactionManager is a Interface for handling Transaction Annotation
+    // MongoTransactionManager is the impl for the above interface.
     @Bean
     public PlatformTransactionManager add (MongoDatabaseFactory dbFactory) {
         return new MongoTransactionManager(dbFactory);

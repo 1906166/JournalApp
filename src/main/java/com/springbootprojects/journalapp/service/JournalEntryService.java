@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -22,6 +23,8 @@ public class JournalEntryService {
     @Autowired
     private UserService userService;
 
+    // Replication is required for Transactional annotation which can't be achieved using local db.
+    @Transactional
     public void createEntry(JournalEntry journalEntry, String userName) {
         try {
             User user = userService.findByUserName(userName);
@@ -32,6 +35,7 @@ public class JournalEntryService {
             log.info(user);
         } catch (Exception e) {
             log.error("Exception ", e);
+            throw new RuntimeException("An Error occurred while saving the entry");
         }
     }
 
