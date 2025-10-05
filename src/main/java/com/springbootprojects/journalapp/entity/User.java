@@ -1,9 +1,6 @@
 package com.springbootprojects.journalapp.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -20,6 +17,7 @@ public class User {
     @Id
     private ObjectId id;
 
+    // enable Auto indexing from properties.
     @Indexed(unique = true)
     @NonNull
     private String userName;
@@ -28,5 +26,5 @@ public class User {
     private String password;
 
     @DBRef
-    private final List<JournalEntry> journalEntries = new ArrayList<>();
+    private List<JournalEntry> journalEntries = new ArrayList<>();
 }

@@ -1,6 +1,6 @@
 package com.springbootprojects.journalapp.service;
 
-import com.springbootprojects.journalapp.Repository.UserRepository;
+import com.springbootprojects.journalapp.repository.UserRepository;
 import com.springbootprojects.journalapp.entity.User;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public void saveEntry(User user) {
-            userRepository.save(user);
+        userRepository.save(user);
     }
 
     public List<User> getAll() {

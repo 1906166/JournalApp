@@ -1,4 +1,4 @@
-package com.springbootprojects.journalapp.Repository;
+package com.springbootprojects.journalapp.repository;
 
 import com.springbootprojects.journalapp.entity.JournalEntry;
 import org.bson.types.ObjectId;

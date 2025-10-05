@@ -1,7 +1,8 @@
 package com.springbootprojects.journalapp.service;
 
-import com.springbootprojects.journalapp.Repository.JournalEntryRepository;
+import com.springbootprojects.journalapp.repository.JournalEntryRepository;
 import com.springbootprojects.journalapp.entity.JournalEntry;
+import com.springbootprojects.journalapp.entity.User;
 import lombok.extern.log4j.Log4j2;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,14 +19,24 @@ public class JournalEntryService {
     @Autowired
     private JournalEntryRepository journalEntryRepository;
 
-    public JournalEntry saveEntry(JournalEntry journalEntry) {
+    @Autowired
+    private UserService userService;
+
+    public void createEntry(JournalEntry journalEntry, String userName) {
         try {
+            User user = userService.findByUserName(userName);
             journalEntry.setDate(LocalDateTime.now());
-            journalEntryRepository.save(journalEntry);
+            JournalEntry saved = journalEntryRepository.save(journalEntry);
+            user.getJournalEntries().add(saved);
+            userService.saveEntry(user);
+            log.info(user);
         } catch (Exception e) {
             log.error("Exception ", e);
         }
-        return journalEntryRepository.save(journalEntry);
+    }
+
+    public void saveEntry(JournalEntry journalEntry) {
+        journalEntryRepository.save(journalEntry);
     }
 
     public List<JournalEntry> getAll() {
@@ -36,7 +47,10 @@ public class JournalEntryService {
         return journalEntryRepository.findById(id);
     }
 
-    public void deleteById(ObjectId id) {
+    public void deleteById(ObjectId id, String userName) {
+        User user = userService.findByUserName(userName);
+        user.getJournalEntries().removeIf(x -> x.getId().equals(id));
+        userService.saveEntry(user);
         journalEntryRepository.deleteById(id);
     }
 }
