@@ -9,7 +9,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,13 +19,19 @@ public class UserService {
     private UserRepository userRepository;
     private static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-    public void saveEntry(User user) {
+    public void saveUser(User user) {
         userRepository.save(user);
     }
 
     public void saveNewUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRoles(new ArrayList<>(List.of("USER")));
+        userRepository.save(user);
+    }
+
+    public void addAdmin(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRoles(new ArrayList<>(List.of("USER", "ADMIN")));
         userRepository.save(user);
     }
 

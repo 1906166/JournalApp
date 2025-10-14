@@ -20,10 +20,11 @@ public class UserController {
     public ResponseEntity<?> updateUser(@RequestBody User user) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
-        User userInDb = userService.findByUserName(userName);
 
+        User userInDb = userService.findByUserName(userName);
         userInDb.setUserName(user.getUserName());
         userInDb.setPassword(user.getPassword());
+
         userService.saveNewUser(userInDb);
 
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
