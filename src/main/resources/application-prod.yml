@@ -1,0 +1,39 @@
+spring:
+  data:
+  mongodb:
+  uri: mongodb+srv://skpatil:FinAuto2001@cluster0.amvzdxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  database: journaldb
+  auto-index-creation: true
+  allow-circular-references: true
+
+server:
+  port: 8082
+  servlet:
+    context-path: /journal
+
+
+logging:
+  level:
+  org:
+  springframework:
+  security: DEBUG
+
+
+#  Properties.yml file
+  # Required for local connections
+  # spring.application.name=JournalApp
+  # spring.data.mongodb.host=localhost
+  # spring.data.mongodb.port=27017
+
+#  spring.data.mongodb.uri=mongodb+srv://skpatil:FinAuto2001@cluster0.amvzdxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+#  spring.data.mongodb.database=journaldb
+#  spring.main.allow-circular-references = true
+
+  # We need to enable this for Auto Indexing.
+#  spring.data.mongodb.auto-index-creation=true
+
+#  logging.level.org.springframework.security=DEBUG
+
+
+  #spring.data.mongodb.username=myjournauser
+  #spring.data.mongodb.password=mypassword
