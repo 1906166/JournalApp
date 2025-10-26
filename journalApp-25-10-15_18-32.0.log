@@ -1,0 +1,140 @@
+18.21.05.604 [%PARSER_ERROR[Thread]] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2c7b5824 - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2c7b5824 - [Thread] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@302a07d - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@302a07d - [Thread] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.springbootprojects.journalapp.JournalApplication.main(JournalApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2c7b5824 - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2c7b5824 - [Thread] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@302a07d - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@302a07d - [Thread] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:289)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:267)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:342)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:195)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+18.21.32.786 [%PARSER_ERROR[Thread]] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@366c4480 - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@366c4480 - [Thread] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.springbootprojects.journalapp.JournalApplication.main(JournalApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@366c4480 - There is no conversion supplier registered for conversion word [Thread]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@366c4480 - [Thread] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:289)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:267)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:342)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:195)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+18:22:56.308 [main] INFO  c.s.journalapp.JournalApplication - Starting JournalApplication using Java 17.0.16 with PID 25468 (C:\Users\saura\Desktop\CODE\projects\JournalApp\target\classes started by saurabh in C:\Users\saura\Desktop\CODE\projects\JournalApp)
+18:22:56.313 [main] INFO  c.s.journalapp.JournalApplication - The following 1 profile is active: "dev"
+18:22:57.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+18:22:57.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 2 MongoDB repository interfaces.
+18:22:58.788 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+18:22:58.814 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+18:22:58.819 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:22:58.819 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+18:22:58.912 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] - Initializing Spring embedded WebApplicationContext
+18:22:58.914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2500 ms
+18:22:59.403 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Microsoft/17.0.16+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='skpatil', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@531ec978, com.mongodb.Jep395RecordCodecProvider@93501be, com.mongodb.KotlinCodecProvider@11d4d979]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.amvzdxx.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-owliu6-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+18:22:59.449 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-srv-cluster0.amvzdxx.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017 to client view of cluster
+18:22:59.512 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-srv-cluster0.amvzdxx.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017 to client view of cluster
+18:22:59.518 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-srv-cluster0.amvzdxx.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017 to client view of cluster
+18:22:59.975 [main] INFO  org.mongodb.driver.cluster - Waiting for server to become available for operation with ID 5. Remaining time: 29986 ms. Selector: WritableServerSelector, topology description: {type=REPLICA_SET, servers=[{address=ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}].
+18:23:00.395 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=377930800, minRoundTripTimeNanos=0, setName='atlas-owliu6-shard-0', canonicalAddress=ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017, hosts=[ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017], passives=[], arbiters=[], primary='ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=68e5125e7998c03b3382e5db, counter=4}, lastWriteDate=Wed Oct 15 18:22:59 IST 2025, lastUpdateTimeNanos=1313505406414700}
+18:23:00.395 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=377930800, minRoundTripTimeNanos=0, setName='atlas-owliu6-shard-0', canonicalAddress=ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, hosts=[ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017], passives=[], arbiters=[], primary='ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=68e5193367bc713f84712b16, counter=3}, lastWriteDate=Wed Oct 15 18:22:59 IST 2025, lastUpdateTimeNanos=1313505406415500}
+18:23:00.395 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=368285800, minRoundTripTimeNanos=0, setName='atlas-owliu6-shard-0', canonicalAddress=ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, hosts=[ac-pz97bnf-shard-00-01.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017, ac-pz97bnf-shard-00-00.amvzdxx.mongodb.net:27017], passives=[], arbiters=[], primary='ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000025, setVersion=1, topologyVersion=TopologyVersion{processId=68e516b918d00a463ec4da1e, counter=6}, lastWriteDate=Wed Oct 15 18:22:59 IST 2025, lastUpdateTimeNanos=1313505406414700}
+18:23:00.406 [cluster-ClusterId{value='68ef992b18d6b3f413d317c1', description='Cluster0'}-ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-pz97bnf-shard-00-02.amvzdxx.mongodb.net:27017 with max election id 7fffffff0000000000000025 and max set version 1
+18:23:01.938 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+18:23:02.406 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+18:23:02.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/journal'
+18:23:02.449 [main] INFO  c.s.journalapp.JournalApplication - Started JournalApplication in 6.757 seconds (process running for 7.421)
+18:23:12.323 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:23:12.323 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:23:12.324 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:23:13.015 [http-nio-8081-exec-2] INFO  c.s.j.controller.PublicController - INFO
+18:23:13.016 [http-nio-8081-exec-2] WARN  c.s.j.controller.PublicController - WARN
+18:23:13.017 [http-nio-8081-exec-2] ERROR c.s.j.controller.PublicController - ERROR
+18:32:27.195 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:32:27.396 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:32:31.910 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit https://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.springbootprojects.journalapp.JournalApplication.main(JournalApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - File property must be set before any triggeringPolicy or rollingPolicy properties
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[myFileAppender] - For more information, please visit https://logback.qos.ch/codes.html#rfa_file_after
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:289)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:267)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:342)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:195)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
