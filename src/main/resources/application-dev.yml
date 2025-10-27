@@ -12,6 +12,10 @@ server:
   servlet:
     context-path: /journal
 
+weather:
+  api:
+    key: d46dd76b828d59e7a4da1da399859276
+
 #logging:
 #  level:
 #    org.springframework.security: DEBUG
