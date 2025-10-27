@@ -6,6 +6,17 @@ spring:
       auto-index-creation: true
   main:
     allow-circular-references: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: saurabhkumarpatiljnv@gmail.com
+    password: ejpu ysnq zebt zlpf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 server:
   port: 8081
