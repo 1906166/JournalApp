@@ -1,5 +1,6 @@
 package com.springbootprojects.journalapp.entity;
 
+import com.springbootprojects.journalapp.enums.Sentiment;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,4 +21,5 @@ public class JournalEntry {
     private String title;
     private String content;
     private LocalDateTime date;
+    private Sentiment sentiment;
 }

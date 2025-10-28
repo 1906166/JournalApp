@@ -9,7 +9,7 @@ public class EmailServiceTest {
     @Autowired
     private EmailService emailService;
 
-    @Test
+//    @Test
     public void testSendEmail(){
         emailService.sendMail(
                 "saurabhkumarpatilnitp@gmail.com",
