@@ -1,4 +1,8 @@
 spring:
+  redis:
+    host: redis-16984.c10.us-east-1-4.ec2.redns.redis-cloud.com
+    port: 16984
+    password: El5uXTrAnOCCx5sC557SrqKf5iBqY3H7
   data:
     mongodb:
       uri: mongodb+srv://skpatil:FinAuto2001@cluster0.amvzdxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
